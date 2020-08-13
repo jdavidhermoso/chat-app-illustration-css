@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+@function pxToRem($size) {
+  @return $size / 16 * 1rem;
+}
+
+/* Typography */
+$default-font-size: pxToRem(16);
+$font-family: 'Rubik', sans-serif;
+$font-weight-sm: 400;
+$font-weight-md: 500;
+$font-weight-lg: 700;
+
+
+
+
