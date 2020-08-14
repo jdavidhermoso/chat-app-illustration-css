@@ -1,14 +1,17 @@
+@import "mixins";
+
 .app {
   position: absolute;
   top: 0;
   left: 0;
   border-radius: 2em;
+  width: 100%;
   height: 100%;
-  background-color: salmon;
+  background-color: $light-gryish-violet;
 
   &__header {
-    height: 15%;
-    background-color: blue;
+    height: 5rem;
+    background-image: linear-gradient(45deg, $light-violet, $light-magenta);
     border-radius: 2em 2em 0.5em 0.5em;
 
     &-inner {
@@ -16,5 +19,55 @@
       height: calc(100% - 1.5em);
       padding-top: 1.5em;
     }
+
+    &-back-btn {
+      display: flex;
+      width: $standard-space;
+      align-items: center;
+      justify-content: center;
+      margin: 0 0.5em;
+      color: $white;
+    }
+
+    &-content {
+      display: flex;
+      flex-grow: 2;
+      position: relative;
+      align-items: center;
+      color: $white;
+    }
+
+    &-user-name {
+      font-weight: $font-weight-md;
+    }
+
+    &-user-desc {
+      font-weight: $font-weight-sm;
+      font-size: pxToRem(10);
+    }
+
+    &-user-picture {
+      width: 40px;
+      height: 40px;
+      border: 2px solid $white;
+      margin-right: 0.5em;
+
+      &, img {
+        border-radius: 50%;
+      }
+    }
+
+    &-opt-btn {
+      display: flex;
+      width: $standard-space;
+      align-items: center;
+      justify-content: center;
+      margin: 0 0.5em;
+    }
+  }
+
+  &__contact-info {
+    display: flex;
+    flex-direction: column;
   }
 }
