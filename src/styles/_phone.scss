@@ -1,0 +1,21 @@
+.phone {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1em solid $white;
+  width: calc(100% - 2em);
+  height: 70%;
+  border-radius: 3em;
+
+  &__speaker {
+    position: relative;
+    width: 60%;
+    height: 1.5em;
+    margin: 0 auto;
+    background-color: $white;
+    border-radius: 3em;
+    transform: translateY(-40%);
+    z-index: 10;
+  }
+}

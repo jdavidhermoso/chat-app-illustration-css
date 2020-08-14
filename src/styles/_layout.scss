@@ -1,0 +1,30 @@
+@import "sizes";
+
+#wrapper {
+  width: 100vw;
+  background-color: green;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: $content-width;
+  margin: 0 auto;
+  height: 100%;
+
+  background-color: salmon;
+}
+
+.section {
+  &.product__showcase {
+    position: relative;
+    height: $product-showcase-height;
+
+    background-color: blue;
+  }
+
+  &.product__description {
+    background-color: red;
+  }
+}
