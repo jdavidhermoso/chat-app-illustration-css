@@ -1,8 +1,11 @@
 @import "sizes";
 
+body {
+  background-color: $app-bg;
+}
+
 #wrapper {
   width: 100vw;
-  background-color: green;
 }
 
 #content {
@@ -12,16 +15,12 @@
   width: $content-width;
   margin: 0 auto;
   height: 100%;
-
-  background-color: salmon;
 }
 
 .section {
   &.product__showcase {
     position: relative;
     height: $product-showcase-height;
-
-    background-color: blue;
   }
 
   &.product__description {
