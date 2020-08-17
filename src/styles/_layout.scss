@@ -12,7 +12,6 @@ body {
   display: flex;
   flex-direction: column;
   position: relative;
-  width: $content-width;
   margin: 0 auto;
   height: 100%;
 }
@@ -22,8 +21,20 @@ body {
     position: relative;
     height: $product-showcase-height;
   }
+}
 
-  &.product__description {
-    background-color: red;
+
+@media (min-width: 1080px) {
+  #content {
+    flex-direction: initial;
+  }
+
+  section.product__showcase {
+    width: 60%;
+  }
+
+  section.product__description {
+    display: flex;
+    align-items: center;
   }
 }

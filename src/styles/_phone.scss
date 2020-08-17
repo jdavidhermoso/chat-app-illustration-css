@@ -4,10 +4,10 @@
   left: 50%;
   transform: translate(-50%, -50%);
   border: 1em solid $white;
-  width: calc(100% - 2em);
+  width: 70%;
   height: 80%;
   border-radius: $border-radius-xl;
-  box-shadow: 0 pxToRem(20) pxToRem(100) pxToRem(10) rgba(0, 0, 0, 0.2);
+  box-shadow: 0 pxToRem(5) pxToRem(100) pxToRem(1) rgba(0, 0, 0, 0.2);
 
   &__speaker {
     position: relative;
@@ -19,4 +19,14 @@
     transform: translateY(-40%);
     z-index: 10;
   }
+
+  @media (min-width: 1080px) {
+    width: pxToRem(275);
+    height: 65%;
+    left: 100%;
+    transform: translate(-100%, -50%);
+  }
 }
+
+
+//20% de 275px es 55px; 20% por que es el espacio que el speaker del telefono deja a cada lado.
