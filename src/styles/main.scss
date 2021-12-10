@@ -1,0 +1,14 @@
+@import "reset";
+@import "colors";
+@import "fonts";
+@import "layout";
+@import "phone";
+@import "app";
+@import "mixins";
+@import "background";
+@import "product_info";
+
+body {
+  font-family: $font-family;
+  font-size: $default-font-size;
+}

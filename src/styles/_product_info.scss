@@ -1,0 +1,22 @@
+.product__info {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+
+  &-title {
+    color: $very-dark-desaturated-violet;
+    font-weight: $font-weight-md;
+    font-size: pxToRem(40);
+  }
+
+  p {
+    width: 90%;
+    line-height: 1.5em;
+    color: $paragraph;
+  }
+
+  @media (min-width: 1080px) {
+    width: 50%;
+    text-align: left;
+  }
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Chat app CSS illustration</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+    </style>
+</head>
+<body>
+<main id="wrapper">
+    <div id="background">
+        <div class="background__shape"></div>
+    </div>
+    <div id="content">
+        <section class="section product__showcase">
+            <div class="phone">
+                <div class="phone__speaker"></div>
+                <div class="app">
+                    <div class="app__header">
+                        <div class="app__header-inner">
+                            <div class="app__header-back-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                     fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"
+                                     stroke-linejoin="round">
+                                    <path d="M15 18l-6-6 6-6"/>
+                                </svg>
+                            </div>
+                            <div class="app__header-content">
+                                <div class="app__header-user-picture">
+                                    <img src="https://fe-mentor-chat-app-illustration.s3.eu-west-3.amazonaws.com/avatar.jpg"
+                                         alt="">
+                                </div>
+                                <div class="app__contact-info">
+                                    <span class="app__header-user-name"> Samuel Green</span>
+                                    <span class="app__header-user-desc"> Available to Walk</span>
+                                </div>
+                            </div>
+                            <div class="app__header-opt-btn">
+                                <svg
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="1"></circle>
+                                    <circle cx="12" cy="5" r="1"></circle>
+                                    <circle cx="12" cy="19" r="1"></circle>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app__body">
+                        <div class="app__body-messages">
+                            <div class="app__message received">
+                                That sounds great. I’d be happy with that.
+                            </div>
+                            <div class="app__message received">
+                                Could you send over some pictures of your dog, please?
+                            </div>
+                            <div class="app__message sent media">
+                                <img src="https://fe-mentor-chat-app-illustration.s3.eu-west-3.amazonaws.com/dog-image-1.jpg"
+                                     alt=""/>
+                                <img src="https://fe-mentor-chat-app-illustration.s3.eu-west-3.amazonaws.com/dog-image-2.jpg"
+                                     alt=""/>
+                                <img src="https://fe-mentor-chat-app-illustration.s3.eu-west-3.amazonaws.com/dog-image-3.jpg"
+                                     alt=""/>
+                            </div>
+                            <div class="app__message sent">
+                                Here are a few pictures. She’s a happy girl!
+                            </div>
+                            <div class="app__message sent">
+                                Can you make it?
+                            </div>
+                            <div class="app__message received">
+                                She looks so happy! The time we discussed works. How long shall I take her out for?
+                            </div>
+                            <div class="app__message received commercial">
+                                <span class="commercial__product-radio"></span>
+                                <span class="commercial__product-text">
+
+                        30 minute walk
+                    </span>
+                                <span class="commercial__product-price">
+                        $29
+                    </span>
+                            </div>
+                            <div class="app__message received commercial">
+                                <span class="commercial__product-radio"></span>
+                                <span class="commercial__product-text">
+                        1 hour walk
+                    </span>
+                                <span class="commercial__product-price">
+                        $49
+                    </span>
+                            </div>
+                        </div>
+                        <div class="app__input">
+                    <span class="app__input-placeholder">
+                        Type a message…
+                    </span>
+                            <div class="app__input-send-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                                     fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"
+                                     stroke-linejoin="round">
+                                    <path d="M9 18l6-6-6-6"/>
+                                </svg>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section product__description">
+            <div class="product__info">
+                <h1 class="product__info-title"> Simple booking </h1>
+                <p>
+                    Stay in touch with our dog walkers through the chat interface. This makes it easy to
+                    discuss arrangements and make bookings. Once the walk has been completed you can rate
+                    your walker and book again all through the chat.
+                </p>
+            </div>
+        </section>
+    </div>
+</main>
+<div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://www.juandavidhermoso.es">David Hermoso</a>.
+</div>
+</body>
+</html>

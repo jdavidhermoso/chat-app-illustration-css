@@ -1,0 +1,200 @@
+@import "mixins";
+
+.app {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: $border-radius-lg;
+  width: 100%;
+  height: 100%;
+  background-color: $app-bg;
+
+  &__header {
+    height: 5rem;
+    background-image: $app-header-bg;
+    border-radius: $border-radius-lg $border-radius-lg $border-radius-sm $border-radius-sm;
+
+    &-inner {
+      display: flex;
+      height: calc(100% - 1.5em);
+      padding-top: 1.5em;
+    }
+
+    &-back-btn {
+      display: flex;
+      width: $top-heading-buttons;
+      align-items: center;
+      justify-content: center;
+      margin: 0 $standard-margin;
+      color: $white;
+    }
+
+    &-content {
+      display: flex;
+      flex-grow: 2;
+      position: relative;
+      align-items: center;
+      color: $white;
+    }
+
+    &-user-name {
+      font-weight: $font-weight-md;
+    }
+
+    &-user-desc {
+      font-weight: $font-weight-sm;
+      font-size: pxToRem(10);
+    }
+
+    &-user-picture {
+      width: 30px;
+      height: 30px;
+      border: 2px solid $white;
+      margin-right: $standard-margin;
+
+      &, img {
+        border-radius: 50%;
+      }
+    }
+
+    &-opt-btn {
+      display: flex;
+      width: $top-heading-buttons;
+      align-items: center;
+      justify-content: center;
+      margin: 0 $standard-margin;
+    }
+  }
+
+  &__contact-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__body {
+    border-radius: 0 0 $border-radius-xl $border-radius-xl;
+    height: calc(100% - 5em);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    &-messages {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 0 1em;
+      height: calc(100% - #{$app-input-w-h} - 1em);
+      overflow-y: scroll;
+    }
+
+    .app__input {
+      display: flex;
+      border-radius: $border-radius-xl;
+      background-color: $white;
+      width: calc(100% - 2em);
+      margin-bottom: $standard-margin;
+      height: $app-input-w-h;
+      color: $grayish-blue;
+      position: absolute;
+      bottom: 0;
+      margin-left: 1em;
+
+      &-placeholder {
+        margin-left: 1.5em;
+        line-height: $app-input-w-h;
+      }
+
+      &-send-btn {
+        position: absolute;
+        right: $standard-margin;
+        border-radius: $border-radius-lg;
+        width: $app-send-btn;
+        height: $app-send-btn;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: $very-dark-desaturated-violet;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+
+  &__message {
+    width: $app-message;
+    font-size: pxToRem(10);
+    padding: 1em;
+    border-radius: $border-radius-md;
+    margin-top: $standard-margin;
+
+    &.received {
+      color: $app-received-message-text;
+      font-family: "Comic Sans MS", serif;
+      background-color: $app-received-message-bg;
+      border-bottom-left-radius: 0.2em;
+    }
+
+    &.sent {
+      position: relative;
+      left: calc(100% - #{$app-message} - 2em);
+      border-bottom-right-radius: $border-radius-xs;
+      background-color: $white;
+      color: $desaturated-dark-violet;
+    }
+
+    &.media {
+      display: flex;
+      padding: 0;
+      left: calc(100% - #{$app-message});
+      flex-wrap: wrap;
+      background-color: unset;
+
+      &.sent {
+        justify-content: flex-end;
+
+        img {
+          margin-left: $standard-margin;
+        }
+      }
+
+      &.received {
+        img {
+          margin-right: $standard-margin;
+        }
+      }
+
+      img {
+        width: 40px;
+        height: 40px;
+        border-radius: $border-radius-md;
+      }
+    }
+
+    &.commercial {
+      width: 70%;
+      display: flex;
+      color: $app-commercial-message-text;
+      background-image: $app-commercial-message-bg;
+      align-items: center;
+
+      .commercial__product-text {
+        flex-grow: 2;
+      }
+
+      .commercial__product-price {
+        font-weight: $font-weight-lg;
+        font-size: pxToRem(16);
+        margin-right: 0.5em;
+      }
+
+      .commercial__product-radio {
+        border-radius: 50%;
+        border: pxToRem(2) solid $app-radio-btn-outline;
+        margin-right: 1em;
+        display: block;
+        width: 12px;
+        height: 12px;
+      }
+    }
+  }
+}

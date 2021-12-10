@@ -1,0 +1,40 @@
+@import "sizes";
+
+body {
+  background-color: $app-bg;
+}
+
+#wrapper {
+  width: 100vw;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.section {
+  &.product__showcase {
+    position: relative;
+    height: $product-showcase-height;
+  }
+}
+
+
+@media (min-width: 1080px) {
+  #content {
+    flex-direction: initial;
+  }
+
+  section.product__showcase {
+    width: 60%;
+  }
+
+  section.product__description {
+    display: flex;
+    align-items: center;
+  }
+}

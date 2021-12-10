@@ -1,0 +1,34 @@
+$pale-violet: hsl(276, 100%, 81%);
+$moderate-violet: hsl(276, 55%, 52%);
+// I Could not find out which is the color for the received message. I had to modify desaturated dark violet
+$desaturated-dark-violet: hsl(271, 15%, 43%);
+$grayish-blue: hsl(206, 6%, 79%);
+$very-dark-desaturated-violet: hsl(271, 36%, 24%);
+$dark-grayish-violet: hsl(270, 7%, 80%);
+
+// Gradients
+$light-magenta: hsl(293, 100%, 63%);
+$light-violet: hsl(264, 100%, 61%);
+
+$white: hsl(0, 0%, 100%);
+$light-gryish-violet: hsl(270, 20%, 96%);
+$very-light-magenta: hsl(289, 100%, 72%);
+
+
+/* Primary */
+// Text
+$app-subheading-text: $pale-violet;
+$app-received-message-bg: hsl(276, 100%, 92%);
+$app-received-message-text: hsl(276, 55%, 52%);
+$app-sent-message: $desaturated-dark-violet;
+$placeholder-text: $grayish-blue;
+$main-heading: $very-dark-desaturated-violet;
+$paragraph: $dark-grayish-violet;
+$app-header-bg: linear-gradient(45deg, $light-violet, $light-magenta);
+/* Secondary */
+$app-bg: $light-gryish-violet;
+$app-btn-bg: $very-dark-desaturated-violet;
+$app-radio-btn-outline: $very-light-magenta;
+$app-commercial-message-bg: linear-gradient(45deg, $light-magenta, $light-violet);
+$app-commercial-message-text: hsl(276, 100%, 92%);
+$bg-shape: linear-gradient(45deg, $light-violet, $light-magenta);
